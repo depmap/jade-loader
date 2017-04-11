@@ -1,5 +1,5 @@
 {
-  "name": "pug-loader",
+  "name": "jade-loader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pug": "^2.0.0-beta11"
+    "jade": "^1.11.0"
   }
 }
