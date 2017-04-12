@@ -1,14 +1,23 @@
 {
   "name": "jade-loader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jade loader for Depmap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "jade": "^1.11.0"
+  },
+  "homepage": "https://github.com/depmap/jade-loader#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depmap/jade-loader.git"
+  },
+  "author": "Henry Snopek <hhsnopek@gmail.com> (http://hhsnopek.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/depmap/jade-loader/issues"
   }
+
 }
