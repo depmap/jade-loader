@@ -6,16 +6,22 @@ const keywords = ['extends', 'include']
 
 module.exports = {
   meta: {
-    ext: 'jade',
-    outExt: 'html'
+    ext: '.jade',
+    outExt: '.html'
   },
   parse: (file, meta) => {
     const deps = []
+    const relativeDir = file.split('/').slice(0, -1).join('/')
+
     fs.readFileSync(file).toString().split('\n').forEach(line => {
       if (line.startsWith(keywords[0]) || line.startsWith(keywords[1])) {
         let words = line.split(' ')
-        let file = words[words.length - 1]
-        deps.push(path.parse(file).name)
+        let dep = words[words.length - 1]
+        console.log(dep)
+        if (dep.indexOf(meta.ext) === -1)
+          dep = dep + meta.ext
+
+        deps.push(path.join(relativeDir, dep))
       }
     })
 

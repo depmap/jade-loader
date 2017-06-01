@@ -1,5 +1,5 @@
 {
-  "name": "jade-loader",
+  "name": "@depmap/jade-loader",
   "version": "1.0.0",
   "description": "Jade loader for Depmap",
   "main": "index.js",
